@@ -2,7 +2,7 @@
 using namespace std;
 void third_largest_element(int arr[],int size){
     if(size<3){
-        cout<<"Invalid Inpust"<<endl;
+        cout<<"Invalid Input"<<endl;
     }
     int first  = arr[0];
     for(int i = 0;i<size;i++){
