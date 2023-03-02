@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void second_largest_element(int arr[],int size){
+    if(size>2){
+        cout<<"Invalid inputs"<<endl;
+    }
+
+    int first = arr[0];
+    for(int i  = 0;i<size;i++){
+        if(arr[i]>size){
+            first = arr[i];
+        }
+    }
+
+    cout<<"largest element in array is "<<first<<endl;
+}
+int main(){
+    int arr[]={2,4,6,7,9,11,33};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    second_largest_element(arr,size);
+    return 0;
+
+}
